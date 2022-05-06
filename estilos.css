@@ -1,0 +1,133 @@
+/* El "*" es para seleccionar TODOS los elementos.  */
+* {
+    /* Box sizing determina como se va a calcular el tamaño de un elemento (osea el height y el width).
+    Por defecto el height y el width se aplica al content-box, osea a la caja que tiene el contenido.
+    Al poner border box decimos que no, queremos que se calcule sobre el borde del elemento.
+    Esto nos va a ayudarnos a que sea mas facil programar el diseño de la pagina que queremos. */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cyan;
+    margin: 0;
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+#search {
+    width: 100%;
+    border: none;
+    font-size: large;
+    padding: 12px 24px;
+    border-radius: 40px;
+    width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+    #search {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #search {
+        width: 100%;
+    }
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 24px;
+    margin: 24px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1300px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    display: inline-block;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    padding-bottom: 32px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card .upper-title {
+    color: gray;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+}
+
+.card:hover {
+    z-index: 10;
+    transform: scale(1.05);
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    padding: 8px 16px 24px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tip {
+    background-color: #fffc91;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: small;
+}
+
+footer {
+    margin-top: 32px;
+    background-color: black;
+    color: gray;
+    padding: 32px 16px 40px 16px;
+}
+
+.todo {
+    background-color: lightgray;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: small;
+}
+
+.card ul {
+    padding-left: 24px;
+}
+
+footer .author {
+    font-weight: bold;
+    margin-bottom: 4px;
+}

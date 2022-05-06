@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+    <head>
+        <!-- Esta linea es para cambiar por una codificacion que permita mostrar simbolos internacionales (incluida la "ñ" y tildes del español). -->
+        <meta charset="UTF-8">
+
+        <!-- Esta linea es para que el navegador sepa que tipo de contenido es. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Soy el titulo (que se muestra en la pestaña) -->
+        <title>Resumen Diseño Web 1</title>
+
+        <!-- Para importar la hoja de estilos. Agrego una de estas etiquetas por cada hoja de estilos que quiero importar (cambiandole el href). -->
+        <link rel="stylesheet" href="estilos.css">
+
+        <script defer src="script.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Special+Elite&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Resumen Diseño Web 1</h1>
+            <input id="search" type="text" placeholder="Buscar">
+        </header>
+        <div class="card-container">
+            <div class="card">
+                <div class="upper-title">HTML</div>
+                <h2>Estructura básica de una página</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">HTML</div>
+                <h2>Etiquetas semanticas</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">HTML</div>
+                <h2>Etiquetas no semanticas</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">HTML</div>
+                <h2>Links con <code>a</code></h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">HTML</div>
+                <h2>Imágenes con <code>img</code></h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="upper-title">HTML</div>
+                    <h2>Mirá el código fuente de una pagina</h2>
+                    <p>
+                        Si queres ver el HTML de la pagina, pueden tocar boton derecho arriba de cualquier elemento y tocar "Ver codigo fuente de la pagina".
+                    </p>
+                    <img src="images/codigo-fuente.png">
+                </div>
+            </div>
+            <div class="card">
+                <div class="upper-title">HTML</div>
+                <h2>Navegá el arbol HTML</h2>
+                <p>
+                    Toca boton derecho sobre el elemento que estas interesado y selecciona "Inspeccionar".
+                </p>
+                <p>
+                    Se abrirá la consola de desarrollo en la tab "Elementos". Ahi vas a poder ver en cual elemento esta contenido (llamado padre) y cuales elementos contiene (llamado hijos).
+                </p>
+                <p>
+                    Seleccionando el elemento en el arbol vas a poder ver las reglas css (y otras cosas). Las podes cambiar ahi, pero al refrescar la pagina se van a borrar.
+                </p>
+                <p class="tip">En esta consola de desarrollo podemos inspeccionar y modificar TODA la pagina.</p>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Agrega estilos a tu página</h2>
+                <img src="images/HTML-and-CSS.png">
+                <p>Utilizamos CSS (cascade style sheets) para darle el diseño que queremos a nuestra pagina.</p>
+                <p>La ventaja de CSS es que permite separar el contenido (HTML) del diseño (CSS), logrando un código más ordenado.</p>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Método 1: CSS inline</h2>
+                <p>La forma mas rudimentaria de agregar estilos a un elemento es, en la mismo elemento HTML (En la etiqueta de apertura) usar el atributo "style".<p>
+                <img src="images/inline-css.png">
+                <p class="tip">Todos los elementos aceptan esta propiedad.</p>
+                <p>Este método tiene la desventaja que mezclamos los estilos con el contenido. Esta bien para prototipar (probar cosas) pero no para un producto comercial.</p>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Método 2: CSS en el header</h2>
+                <p>La siguiente forma, un poco mas sofisticada, es escribir los estilos dentro de uno, o más, elementos "style".<p>
+                <img src="images/style-elem.png">
+                <p class="tip">Para eso tenemos que saber como "linquear" las reglas CSS que queremos aplicar con los elementos del body.. En otra tarjeta vemos sobre los selectores css.</p>
+                <p>Es una buena practica poner todos los estilos en un unico elemento en el head, pero pueden tambien estar en el body.</p>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Método 3: CSS externo</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Prioridades de las reglas</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Reglas más comunes</h2>
+                <ul>
+                    <li>
+                        <span style="background-color: chocolate;">background-color</span>: Seteamos el color de fondo.
+                    </li>
+                    <li>
+                        <span style="color: green;">color</span>: Seteamos el color del texto.
+                    </li>
+                    <li>
+                        <span style="text-decoration: underline;">Subrayado</span>: Seteamos el color del texto.
+                    </li>
+                    <li>
+                        <span style="font-weight: bold;">Negrita</span>: Seteamos el color del texto.
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Margen y padding</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Selectores CSS</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Reglass CSS para el texto</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Usa una fuente de Google Fonts</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Crea una clase "card"</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>La regla <code>display</code></h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>La regla <code>position</code></h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">CSS</div>
+                <h2>Haz tu página responsive</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">Javascript</div>
+                <h2>Haz tu página interactiva</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">Javascript</div>
+                <h2>Muestra una alerta</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">Git</div>
+                <h2>Versiona tu código</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+            <div class="card">
+                <div class="upper-title">Operaciones</div>
+                <h2>Tu pagina accesible al mundo</h2>
+                <div class="todo">Para hacer</div>
+            </div>
+        </div>
+        <footer>
+            <div class="author">Pagina desarrollada por Ezequiel Sanchez.</div>
+            Si tenes alguna duda o correcion escribime a <a href="mailto:ezequielsanchez@anima.edu.uy">ezequielsanchez@anima.edu.uy</a>.
+        </footer>
+    </body>
+</html>
